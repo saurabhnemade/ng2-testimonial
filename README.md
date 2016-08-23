@@ -4,3 +4,31 @@
 
 # ng2-component-starter
 This repository is a starting point to build reuseable and testable Angular 2 components.
+
+## Features
+
+## Commands
+
+## Making a component
+
+# ng2-your-component
+
+[Describe your component here. Mention dependencies to other modules/components here if neccessary.]
+
+## Installation
+
+[Required steps to make your component ready to use]
+
+`npm install ng2-your-component --save`
+
+## Demo
+
+[Link to a location, where to see your component in action]
+
+## Usage
+
+[How to use your component. How to get started quickly.]
+
+## API
+
+[Refer to API documentation of your component. Cosider doing this in the GitHub wiki.]
