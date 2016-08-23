@@ -1,0 +1,24 @@
+{
+  "name": "@axa-ch/ng2-your-component",
+  "version": "0.1.0",
+  "description": "Add description of your Angular 2 component here",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/axa-ch/ng2-component-starter.git"
+  },
+  "keywords": [
+    "starter",
+    "angular2",
+    "component"
+  ],
+  "author": "Individual Mobile Solutions",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/axa-ch/ng2-component-starter/issues"
+  },
+  "homepage": "https://github.com/axa-ch/ng2-component-starter#readme"
+}
