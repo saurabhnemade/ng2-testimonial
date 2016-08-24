@@ -7,6 +7,8 @@ This repository is a starting point to build reuseable and testable Angular 2 co
 
 ## Features
 
+* Codelyzer https://www.npmjs.com/package/codelyzer
+
 ## Commands
 
 ## Making a component

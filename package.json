@@ -2,9 +2,15 @@
   "name": "@axa-ch/ng2-your-component",
   "version": "0.1.0",
   "description": "Add description of your Angular 2 component here",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 0"
+    "test": "echo \"Error: no test specified\" && exit 0",
+    "prebuild": "rimraf dist",    
+    "build": "tsc",
+    "prepublish": "npm run build",
+    "postinstall": "npm run typings -- install",  
+    "typings": "typings"  
   },
   "repository": {
     "type": "git",
@@ -20,5 +26,15 @@
   "bugs": {
     "url": "https://github.com/axa-ch/ng2-component-starter/issues"
   },
-  "homepage": "https://github.com/axa-ch/ng2-component-starter#readme"
+  "homepage": "https://github.com/axa-ch/ng2-component-starter#readme",
+  "devDependencies": {
+    "@angular/common": "^2.0.0-rc.5",
+    "@angular/compiler": "^2.0.0-rc.5",
+    "@angular/core": "^2.0.0-rc.5",
+    "@angular/forms": "^0.3.0",
+    "rimraf": "^2.5.4",
+    "rxjs": "^5.0.0-beta.11",
+    "typescript": "^1.8.10",
+    "zone.js": "^0.6.17"
+  }
 }
