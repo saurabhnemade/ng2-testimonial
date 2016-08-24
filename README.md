@@ -7,7 +7,7 @@ This repository is a starting point to build reuseable and testable Angular 2 co
 
 ## Features
 
-* Codelyzer https://www.npmjs.com/package/codelyzer
+* Linter's to follow the official Angular 2 Style Guide through [Codelyzer](https://www.npmjs.com/package/codelyzer)
 
 ## Commands
 
