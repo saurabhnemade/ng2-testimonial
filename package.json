@@ -8,8 +8,9 @@
     "test": "echo \"Error: no test specified\" && exit 0",
     "prebuild": "rimraf dist",
     "build": "tsc",
-    "prepublish": "npm run build",
-    "postinstall": "npm run typings -- install",
+    "demo": "./node_modules/.bin/webpack-dev-server --hot --inline --colors --display-error-details --display-cached",
+    "prepublish": "typings install && npm run build",
+    "postinstall": "npm run typings install",
     "typings": "typings"
   },
   "repository": {
@@ -19,7 +20,10 @@
   "keywords": [
     "starter",
     "angular2",
-    "component"
+    "component",
+    "ng",
+    "angular 2",
+    "angular"
   ],
   "author": "Individual Mobile Solutions",
   "license": "MIT",
@@ -32,10 +36,17 @@
     "@angular/compiler": "^2.0.0-rc.5",
     "@angular/core": "^2.0.0-rc.5",
     "@angular/forms": "^0.3.0",
+    "@angular/platform-browser": "^2.0.0-rc.5",
+    "@angular/platform-browser-dynamic": "^2.0.0-rc.5",
+    "@angular/router": "^3.0.0-rc.1",
     "codelyzer": "0.0.28",
+    "core-js": "^2.4.1",
+    "ng2-webpack-config": "0.0.4",
     "rimraf": "^2.5.4",
     "rxjs": "^5.0.0-beta.11",
     "typescript": "^1.8.10",
+    "webpack": "^1.13.2",
+    "webpack-dev-server": "^1.15.0",
     "zone.js": "^0.6.17"
   }
 }

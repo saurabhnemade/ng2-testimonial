@@ -7,11 +7,28 @@ This repository is a starting point to build reuseable and testable Angular 2 co
 
 ## Features
 
+* [Angular 2 RC5](https://angular.io/)
 * Linter's to follow the official Angular 2 Style Guide through [Codelyzer](https://www.npmjs.com/package/codelyzer)
+* Type manager with [Typings](https://github.com/typings/typings)
+
+## Installation
+
+1. Clone the repository  
+`git clone https://github.com/axa-ch/ng2-component-starter.git`
+2. Change directory to ng2-component-starter  
+`cd ng2-component-starter`
+3. Install global node module dependencies  
+`npm install webpack protractor typings rimraf -g`
+4. Run `npm install` to install local node-module dependencies
+5. Run `typings install` to install required TypeScript typings.
 
 ## Commands
 
 ## Making a component
+
+### Cleanup checklist
+
+This starter project could have some items / settings you probably want to remove or adjust. This checklist helps you to review your component needs.
 
 # ng2-your-component
 

@@ -1,9 +1,8 @@
 {
-  "name": "ng2-component-starter", 
-  "main": "index.d.ts",
-  "dependencies": {},  
+  "name": "ng2-component-starter",
+  "dependencies": {},
   "globalDevDependencies": {
-    "jasmine": "registry:dt/jasmine#2.2.0+20160412134438"
+    "jasmine": "registry:dt/jasmine#2.2.0+20160621224255"
   },
   "globalDependencies": {
     "es6-shim": "registry:dt/es6-shim#0.31.2+20160317120654",

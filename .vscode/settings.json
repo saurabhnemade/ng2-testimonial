@@ -3,7 +3,7 @@
     "demo/**/*.js": true,
     "demo/**/*.map": true,
     "src/**/*.js": true,
-    "src/**/*.map": true    
+    "src/**/*.map": true
   },
   "search.exclude": {
     "**/node_modules": true,
