@@ -6,7 +6,7 @@ import { ClockComponent } from '@axa-ch/ng2-component-starter/components/clock';
 ```
 
 ### Clock properties
-- `color` (`?:string='#103184'`) - defines background color of the beautiful clock.
+- `dateFormat` (`?:string='HH:mm:ss'`) - defines the format of the displayed date/time.
 
 ### Clock events
 - `midnight` - fired when it's midnight time
