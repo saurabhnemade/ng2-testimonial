@@ -1,22 +1,21 @@
 import { Component } from '@angular/core';
-import { CLOCK_DIRECTIVES } from '../../../src/index';
 import { TimerService } from '../../../src/components/timer/timer.service';
 
 // webpack html imports
-let template = require('./clock-demo.html');
+let template = require('./timer-demo.html');
 
 @Component({
-    selector: 'clock-demo',
     template: template,
-    directives: [CLOCK_DIRECTIVES],
+    selector: 'timer-demo',
     providers: [TimerService]
 })
 
-export class ClockDemoComponent {
+export class TimerDemoComponent {
+    public numberOfSeconds : number;
     public text : string;
     constructor(public timerService:TimerService){}
 
     public start() : void {
-        this.timerService.start(5);
+        this.timerService.start(this.numberOfSeconds);
     }
 }

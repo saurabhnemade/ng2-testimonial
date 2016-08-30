@@ -15,4 +15,4 @@ this.timerService.start(numOfSeconds, optionalCallbackFunction);
 ```
 
 ### Callback
-the `optionalCallbackFunction` get called as soon as the time is up.
+the `optionalCallbackFunction` gets called as soon as the time is up.
