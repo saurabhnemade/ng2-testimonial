@@ -11,7 +11,8 @@ import { TimerService } from '@axa-ch/ng2-component-starter/components/timer';
 constructor(public timerService:TimerService){}
 ...
 this.timerService.start(numOfSeconds, optionalCallbackFunction);
+...
 ```
 
-### Clock events
-- `timerend` - fired when timer is over
+### Callback
+the `optionalCallbackFunction` gets called as soon as the time is up.

@@ -1,1 +1,1 @@
-Service for timer functionality. Fires event on timer end.
+Service for timer functionality.
