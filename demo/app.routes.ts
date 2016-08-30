@@ -1,9 +1,9 @@
 import {GettingStartedSectionComponent} from './components/getting-started/getting-started';
 import {ClockSectionComponent} from './components/clock-section';
 
-import {provideRouter, RouterConfig} from '@angular/router';
+import { Routes, RouterModule } from '@angular/router';
 
-export const routes:RouterConfig = [
+export const routes:Routes = [
   {
     path: '',
     data: ['Getting started'],
@@ -18,6 +18,4 @@ export const routes:RouterConfig = [
   }
 ];
 
-export const APP_ROUTER_PROVIDERS = [
-  provideRouter(routes)
-];
+export const routing = RouterModule.forRoot(routes, { useHash : true});

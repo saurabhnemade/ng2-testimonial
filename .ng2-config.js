@@ -16,7 +16,7 @@ module.exports = {
   entry: {
     polyfills: './demo/polyfills.ts',
     vendor: './demo/vendor.ts',
-    main: './demo/index.ts'
+    main: './demo/main.ts'
   },
   commonChunks: {
     name: ['polyfills', 'vendor'].reverse()
