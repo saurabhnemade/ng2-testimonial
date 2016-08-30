@@ -1,0 +1,1 @@
+Service for timer functionality. Fires event on timer end.
