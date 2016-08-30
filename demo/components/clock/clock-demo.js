@@ -1,13 +1,15 @@
 "use strict";
 var core_1 = require('@angular/core');
 var index_1 = require('../../../src/index');
+// webpack html imports
+var template = require('./clock-demo.html');
 var ClockDemoComponent = (function () {
     function ClockDemoComponent() {
     }
     ClockDemoComponent = __decorate([
         core_1.Component({
-            selector: 'component-demo',
-            template: require('./clock-demo.html'),
+            selector: 'clock-demo',
+            template: template,
             directives: [index_1.CLOCK_DIRECTIVES]
         }), 
         __metadata('design:paramtypes', [])
