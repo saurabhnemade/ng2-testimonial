@@ -10,7 +10,7 @@ var ClockComponent = (function () {
             .interval(1000)
             .map(function () {
             var date = new Date();
-            if (date.getHours() === 15 && date.getMinutes() === 40 && date.getSeconds() === 15) {
+            if (date.getHours() === 9 && date.getMinutes() === 12 && date.getSeconds() === 15) {
                 _this.onMidnight();
             }
             return date;
