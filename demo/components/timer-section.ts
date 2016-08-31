@@ -2,7 +2,7 @@ import {Component} from '@angular/core';
 import {CORE_DIRECTIVES} from '@angular/common';
 
 import {TimerDemoComponent} from './timer/timer-demo';
-import {DemoSectionComponent} from './demo-section';
+import {DemoSectionComponent} from './demo-section/demo-section.component.ts';
 
 // webpack html imports
 let doc = require('../../src/components/timer/readme.md');
