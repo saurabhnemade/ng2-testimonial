@@ -1,6 +1,6 @@
 import { GettingStartedSectionComponent } from './components/getting-started/getting-started.component';
 import { ClockSectionComponent } from './components/clock-section.component';
-import { TimerSectionComponent } from './components/timer-section';
+import { TimerSectionComponent } from './components/timer-section.component';
 
 import { Routes, RouterModule } from '@angular/router';
 

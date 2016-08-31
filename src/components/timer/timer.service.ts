@@ -10,6 +10,12 @@ export class TimerService {
     constructor() {}
 
     public start(totalNumberOfSeconds : number, callback? : any) : void{
+        // Falls Anzahl Sekunden kleiner oder gleich 0 ist, macht der Countdown
+        // kein Sinn.
+        if(totalNumberOfSeconds <= 0){
+            return;
+        }
+
         this.totalNumberOfSeconds = totalNumberOfSeconds;
         this.secondsLeft = this.totalNumberOfSeconds;
 
@@ -23,7 +29,7 @@ export class TimerService {
     private timerCycle(callback : any) : void {
         this.secondsLeft = Math.round((this.secondsLeft -= 0.1) * 10) / 10;
 
-        if(this.secondsLeft === 0.0){
+        if(this.secondsLeft <= 0.0){
             this.theTimer.unsubscribe();
             this.theTimer = undefined;
             callback();
