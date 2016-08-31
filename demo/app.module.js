@@ -1,8 +1,8 @@
 "use strict";
 var core_1 = require('@angular/core');
 var platform_browser_1 = require('@angular/platform-browser');
-var app_component_1 = require('./app.component');
 var forms_1 = require('@angular/forms');
+var app_component_1 = require('./app.component');
 var app_routes_1 = require('./app.routes');
 var AppModule = (function () {
     function AppModule() {

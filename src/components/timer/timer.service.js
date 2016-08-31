@@ -6,6 +6,11 @@ var TimerService = (function () {
     }
     TimerService.prototype.start = function (totalNumberOfSeconds, callback) {
         var _this = this;
+        // Falls Anzahl Sekunden kleiner oder gleich 0 ist, macht der Countdown
+        // kein Sinn.
+        if (totalNumberOfSeconds <= 0) {
+            return;
+        }
         this.totalNumberOfSeconds = totalNumberOfSeconds;
         this.secondsLeft = this.totalNumberOfSeconds;
         // Timer wird hier runtergezählt.
@@ -16,7 +21,7 @@ var TimerService = (function () {
     };
     TimerService.prototype.timerCycle = function (callback) {
         this.secondsLeft = Math.round((this.secondsLeft -= 0.1) * 10) / 10;
-        if (this.secondsLeft === 0.0) {
+        if (this.secondsLeft <= 0.0) {
             this.theTimer.unsubscribe();
             this.theTimer = undefined;
             callback();

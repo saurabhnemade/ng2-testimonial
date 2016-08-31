@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { TimerService } from '../../../src/components/timer/timer.service';
 
 // webpack html imports
-let template = require('./timer-demo.html');
+let template = require('./timer-demo.component.html');
 
 @Component({
     template: template,
