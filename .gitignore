@@ -1,3 +1,13 @@
+# Generated files
+/demo/*.js
+/demo/*.map
+/demo/components/**/*.js
+/demo/components/**/*.map
+
+/src/**/*.js
+/src/**/*.js
+/src/**/*.map
+
 # Logs
 logs
 *.log
