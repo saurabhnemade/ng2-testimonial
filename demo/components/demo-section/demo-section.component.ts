@@ -1,7 +1,7 @@
 import {Component, Input} from '@angular/core';
 //import {TAB_DIRECTIVES} from '../../ng2-bootstrap';
 
-let template = require('./demo-section.template.html');
+let template = require('./demo-section.component.html');
 
 @Component({
   selector: 'demo-section',

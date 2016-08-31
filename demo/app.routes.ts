@@ -1,6 +1,6 @@
-import {GettingStartedSectionComponent} from './components/getting-started/getting-started';
-import {ClockSectionComponent} from './components/clock-section';
-import {TimerSectionComponent} from './components/timer-section';
+import { GettingStartedSectionComponent } from './components/getting-started/getting-started.component';
+import { ClockSectionComponent } from './components/clock-section.component';
+import { TimerSectionComponent } from './components/timer-section';
 
 import { Routes, RouterModule } from '@angular/router';
 
@@ -23,4 +23,4 @@ export const routes:Routes = [
   }
 ];
 
-export const routing = RouterModule.forRoot(routes, { useHash : true});
+export const routing = RouterModule.forRoot(routes, { useHash : true });
