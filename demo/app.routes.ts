@@ -1,5 +1,6 @@
 import { GettingStartedSectionComponent } from './components/getting-started/getting-started.component';
 import { ClockSectionComponent } from './components/clock-section.component';
+import { TimerSectionComponent } from './components/timer-section';
 
 import { Routes, RouterModule } from '@angular/router';
 
@@ -12,6 +13,10 @@ export const routes:Routes = [
     path: 'clock',
     data: ['Clock'],
     component: ClockSectionComponent
+  }, {
+    path: 'timer',
+    data: ['Timer'],
+    component: TimerSectionComponent
   }, {
     path: '**',
     redirectTo: '/'

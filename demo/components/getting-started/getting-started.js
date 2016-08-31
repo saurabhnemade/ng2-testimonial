@@ -1,6 +1,6 @@
 "use strict";
 var core_1 = require('@angular/core');
-var name = "Native Angular 2 directives for bootstrap";
+var name = "AXA Angular 2 Component Starter";
 // webpack html imports
 var template = require('./getting-started.template.html');
 var desc = "\n";
@@ -11,9 +11,9 @@ var GettingStartedSectionComponent = (function () {
     function GettingStartedSectionComponent() {
         this.name = name;
         this.desc = desc;
-        this.dependencies = 'N/A'; //dependencies;
-        this.installation = 'N/A'; //installation;
-        this.readingDocumentation = 'N/A'; //readingDocumentation;
+        this.dependencies = 'deps N/A'; //dependencies;
+        this.installation = 'installation N/A'; //installation;
+        this.readingDocumentation = 'reading N/A'; //readingDocumentation;
     }
     GettingStartedSectionComponent = __decorate([
         core_1.Component({

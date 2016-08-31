@@ -20,7 +20,7 @@ export class ClockComponent {
         .map(()=> {            
             let date = new Date();
 
-            if (date.getHours() === 15 && date.getMinutes() === 40 && date.getSeconds() === 15) {
+            if (date.getHours() === 9 && date.getMinutes() === 12 && date.getSeconds() === 15) {
                 this.onMidnight();
             }        
             return date;
@@ -29,4 +29,4 @@ export class ClockComponent {
     private onMidnight():void {
         this.midnight.emit(this);
     }
-} 
+}
