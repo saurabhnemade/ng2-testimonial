@@ -1,3 +1,3 @@
-<input type="number" [(ngModel)]="numberOfSeconds" placeholder="Anzahl Sekunden" />
+<input type="number" min="1" [(ngModel)]="numberOfSeconds" placeholder="Anzahl Sekunden" />
 <button (click)="start()">start timer</button>
 {{ timerService.secondsLeft }}
