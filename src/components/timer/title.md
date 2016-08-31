@@ -1,1 +1,1 @@
-Service for timer functionality.
+This service is able to start a really fancy timer functionality. The layout isn't included in this component. The layout was made for this demo only.
