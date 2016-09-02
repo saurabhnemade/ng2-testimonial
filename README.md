@@ -27,40 +27,23 @@ This repository is a starting point to build reuseable and testable Angular 2 co
 ## Making a component
 
 ### Cleanup checklist
-* Fork repository to your own account or wherever you want
-* Clone your repository localy
-* Refactor README.md in `main` folder
-⋅⋅* This includes refactoring repo-clone link
-⋅⋅* This includes refactoring gitter link and (dev)Dependency status links
-* Edit package.json
-⋅⋅* Edit diffrent properties such as `name`, `description`, `repository-url` and further more
-* Edit `demo/index.html`
-⋅⋅* Author link
-⋅⋅* Meta description
-* Edit `demo/components/clock-section.ts`
-⋅⋅* `ClockSectionComponent` src property
-* Edit `demo/components/getting-started/getting-started.template.html`
-⋅⋅* iFrame src
-* Edit `demo/components/getting-started/getting-started.ts`
-⋅⋅* `name` property
-* Implement your new component
-
-1. First ordered list item
-2. Another item
-⋅⋅* Unordered sub-list. 
-1. Actual numbers don't matter, just that it's a number
-⋅⋅1. Ordered sub-list
-4. And another item.
-
-⋅⋅⋅You can have properly indented paragraphs within list items. Notice the blank line above, and the leading spaces (at least one, but we'll use three here to also align the raw Markdown).
-
-⋅⋅⋅To have a line break without a paragraph, you will need to use two trailing spaces.⋅⋅
-⋅⋅⋅Note that this line is separate, but within the same paragraph.⋅⋅
-⋅⋅⋅(This is contrary to the typical GFM line break behaviour, where trailing spaces are not required.)
-
-* Unordered list can use asterisks
-- Or minuses
-+ Or pluses
+* [ ] Fork repository to your own account or wherever you want
+* [ ] Clone your repository localy
+* [ ] Refactor README.md in `main` folder
+  1. This includes refactoring repo-clone link
+  2. This includes refactoring gitter link and (dev)Dependency status links
+* [ ] Edit package.json
+  1. Edit diffrent properties such as `name`, `description`, `repository-url` and further more
+* [ ] Edit `demo/index.html`
+  1. Author link
+  2. Meta description
+* [ ] Edit `demo/components/clock-section.ts`
+  1. `ClockSectionComponent` src property
+* [ ] Edit `demo/components/getting-started/getting-started.template.html`
+  1.  iFrame src
+* [ ] Edit `demo/components/getting-started/getting-started.ts`
+  1. `name` property
+* [ ] Implement your new component
 
 This starter project could have some items / settings you probably want to remove or adjust. This checklist helps you to review your component needs.
 
