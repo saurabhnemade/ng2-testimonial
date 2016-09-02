@@ -27,6 +27,8 @@ This repository is a starting point to build reuseable and testable Angular 2 co
 ## Making a component
 
 ### Cleanup checklist
+This starter project could have some items / settings you probably want to remove or adjust. This checklist helps you to review your component needs.
+
 * [ ] Fork repository to your own account or wherever you want
 * [ ] Clone your repository localy
 * [ ] Refactor README.md in `main` folder
@@ -40,12 +42,10 @@ This repository is a starting point to build reuseable and testable Angular 2 co
 * [ ] Edit `demo/components/clock-section.ts`
   1. `ClockSectionComponent` src property
 * [ ] Edit `demo/components/getting-started/getting-started.template.html`
-  1.  iFrame src
+  1.  iframe src
 * [ ] Edit `demo/components/getting-started/getting-started.ts`
   1. `name` property
 * [ ] Implement your new component
-
-This starter project could have some items / settings you probably want to remove or adjust. This checklist helps you to review your component needs.
 
 # ng2-your-component
 
