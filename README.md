@@ -27,23 +27,23 @@ This repository is a starting point to build reuseable and testable Angular 2 co
 ## Making a component
 
 ### Cleanup checklist
-* [ ] Fork repository to your own account or wherever you want
-* [ ] Clone your repository localy
-* [ ] Refactor README.md in `main` folder
+* Fork repository to your own account or wherever you want
+* Clone your repository localy
+* Refactor README.md in `main` folder
 ⋅⋅1. This includes refactoring repo-clone link
 ⋅⋅2. This includes refactoring gitter link and (dev)Dependency status links
-* [ ] Edit package.json
+* Edit package.json
 ⋅⋅1. Edit diffrent properties such as `name`, `description`, `repository-url` and further more
-* [ ] Edit `demo/index.html`
+* Edit `demo/index.html`
 ⋅⋅1. Author link
 ⋅⋅2. Meta description
-* [ ] Edit `demo/components/clock-section.ts`
+* Edit `demo/components/clock-section.ts`
 ⋅⋅1. `ClockSectionComponent` src property
-* [ ] Edit `demo/components/getting-started/getting-started.template.html`
+* Edit `demo/components/getting-started/getting-started.template.html`
 ⋅⋅1. iFrame src
-* [ ] Edit `demo/components/getting-started/getting-started.ts`
+* Edit `demo/components/getting-started/getting-started.ts`
 ⋅⋅1. `name` property
-* [ ] Implement your new component
+* Implement your new component
 
 This starter project could have some items / settings you probably want to remove or adjust. This checklist helps you to review your component needs.
 
