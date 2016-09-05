@@ -1,10 +1,10 @@
 # Generated files
-#/demo/*.js
-#/demo/*.map
-#/demo/components/**/*.js
-#/demo/components/**/*.map
-#/src/**/*.js
-#/src/**/*.map
+/demo/*.js
+/demo/*.map
+/demo/components/**/*.js
+/demo/components/**/*.map
+/src/**/*.js
+/src/**/*.map
 
 # Logs
 logs
