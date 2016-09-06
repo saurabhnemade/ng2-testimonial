@@ -5,7 +5,7 @@
 'use strict';
 
 // Look in ./config folder for webpack.dev.js
-const conf = getWebpackConfig(process.env.NODE_ENV, require('./.ng2-config'));
+const conf = getWebpackConfig(process.env.NODE_ENV, require('./.ng2-config.demo'));
 
 // marked renderer hack
 const marked = require('marked');
