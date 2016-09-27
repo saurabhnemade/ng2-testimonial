@@ -24,18 +24,20 @@ This repository is a starting point to build reuseable and testable Angular 2 co
 
 ## Commands
 
+* `npm run demo` - Run demo to see sample components in action (visit http://localhost:3000)
+
 ## Making a component
 
 ### Cleanup checklist
 This starter project could have some items / settings you probably want to remove or adjust. This checklist helps you to review your component needs.
 
 * [ ] Fork repository to your own account or wherever you want
-* [ ] Clone your repository localy
+* [ ] Clone your repository locally
 * [ ] Refactor README.md in `main` folder
   1. This includes refactoring repo-clone link
   2. This includes refactoring gitter link and (dev)Dependency status links
 * [ ] Edit package.json
-  1. Edit diffrent properties such as `name`, `description`, `repository-url` and further more
+  1. Edit different properties such as `name`, `description`, `repository-url` and further more
 * [ ] Edit `demo/index.html`
   1. Author link
   2. Meta description
@@ -46,6 +48,14 @@ This starter project could have some items / settings you probably want to remov
 * [ ] Edit `demo/components/getting-started/getting-started.ts`
   1. `name` property
 * [ ] Implement your new component
+
+## Publish your component to the offical npm registry
+
+If you would like to publish your component to the **@axa-ch** scope, you have to log in to this account using npm. [See contact information on npmjs.](https://www.npmjs.com/~axa-ch)  
+
+1. `npm login` - Then enter user and password and email
+2. `npm publish --access public` - Publishes the repo.
+3. Consider adding your personal npmjs user as contributor to the newly published repository. So you can continue working with your personal account.
 
 # ng2-your-component
 
@@ -64,6 +74,14 @@ This starter project could have some items / settings you probably want to remov
 ## Usage
 
 [How to use your component. How to get started quickly.]
+
+### CommonJS
+
+ng2-your-component ships as un-bundled CommonJS modules (located in the dist folder), which can be imported with require('ng2-your-component');, or import for those environments that support this method (e.g. TypeScript 1.6+).
+
+### System.register
+
+ng2-your-component also ships with a bundle in the system format (dist/ng2-your-component-bundle.js), suitable for use with the es6-module-loader and related loaders such as SystemJS.
 
 ## API
 
