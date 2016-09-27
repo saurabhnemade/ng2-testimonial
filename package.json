@@ -7,9 +7,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 0",
     "prebuild": "rimraf dist",
-    "build": "tsc",
+    "build": "npm run build:cjs && npm run build:system",
     "demo": "./node_modules/.bin/webpack-dev-server --config webpack.config.demo.js --hot --inline --colors --display-error-details --display-cached",
-    "build:dist": "npm run prebuild && webpack --config webpack.config.dist.js",
+    "build:system": "node node_modules/typescript/bin/tsc -p tsconfig.system.json",
+    "build:cjs": "node node_modules/typescript/bin/tsc -p tsconfig.cjs.json",
     "prepublish": "typings install && npm run build",
     "postinstall": "npm run typings install",
     "typings": "typings"
@@ -48,6 +49,7 @@
     "typescript": "^1.8.10",
     "webpack": "^1.13.2",
     "webpack-dev-server": "^1.15.0",
+    "webpack-node-externals": "^1.4.3",
     "zone.js": "^0.6.17"
   },
   "peerDependencies": {
