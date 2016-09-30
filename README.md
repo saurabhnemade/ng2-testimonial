@@ -7,9 +7,12 @@ This repository is a starting point to build reuseable and testable Angular 2 co
 
 ## Features
 
-* [Angular 2 RC5](https://angular.io/)
+* [Angular 2.0.1](https://angular.io/)
+* [TypeScript 2](https://www.typescriptlang.org/docs/release-notes/typescript-2.0.html)
+* Type management with NPM ([@types](https://www.npmjs.com/~types))
+* Demo application that shows the component(s) in action
+  * webpack
 * Linter's to follow the official Angular 2 Style Guide through [Codelyzer](https://www.npmjs.com/package/codelyzer)
-* Type manager with [Typings](https://github.com/typings/typings)
 
 ## Installation
 
@@ -18,9 +21,8 @@ This repository is a starting point to build reuseable and testable Angular 2 co
 2. Change directory to ng2-component-starter  
 `cd ng2-component-starter`
 3. Install global node module dependencies  
-`npm install webpack protractor typings rimraf -g`
+`npm install webpack protractor rimraf -g`
 4. Run `npm install` to install local node-module dependencies
-5. Run `typings install` to install required TypeScript typings.
 
 ## Commands
 
@@ -41,11 +43,11 @@ This starter project could have some items / settings you probably want to remov
 * [ ] Edit `demo/index.html`
   1. Author link
   2. Meta description
-* [ ] Edit `demo/components/clock-section.ts`
+* [ ] Edit `demo/components/clock-section.component.ts`
   1. `ClockSectionComponent` src property
-* [ ] Edit `demo/components/getting-started/getting-started.template.html`
+* [ ] Edit `demo/components/getting-started-section/getting-started-section.component.html`
   1.  iframe src
-* [ ] Edit `demo/components/getting-started/getting-started.ts`
+* [ ] Edit `demo/components/getting-started-section/getting-started-section.component.ts`
   1. `name` property
 * [ ] Implement your new component
 

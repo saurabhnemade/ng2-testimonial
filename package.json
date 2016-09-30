@@ -8,12 +8,10 @@
     "test": "echo \"Error: no test specified\" && exit 0",
     "prebuild": "rimraf dist",
     "build": "npm run build:cjs && npm run build:system",
-    "demo": "./node_modules/.bin/webpack-dev-server --config webpack.config.demo.js --hot --inline --colors --display-error-details --display-cached",
+    "demo": "./node_modules/.bin/webpack-dev-server --config webpack.config.demo.js --hot --inline",
     "build:system": "node node_modules/typescript/bin/tsc -p tsconfig.system.json",
     "build:cjs": "node node_modules/typescript/bin/tsc -p tsconfig.cjs.json",
-    "prepublish": "typings install && npm run build",
-    "postinstall": "npm run typings install",
-    "typings": "typings"
+    "prepublish": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -34,26 +32,31 @@
   },
   "homepage": "https://github.com/axa-ch/ng2-component-starter#readme",
   "devDependencies": {
-    "@angular/common": "^2.0.0-rc.5",
-    "@angular/compiler": "^2.0.0-rc.5",
-    "@angular/core": "^2.0.0-rc.5",
-    "@angular/forms": "^0.3.0",
-    "@angular/platform-browser": "^2.0.0-rc.5",
-    "@angular/platform-browser-dynamic": "^2.0.0-rc.5",
-    "@angular/router": "^3.0.0-rc.1",
-    "codelyzer": "0.0.28",
+    "@angular/common": "^2.0.1",
+    "@angular/compiler": "^2.0.1",
+    "@angular/core": "^2.0.1",
+    "@angular/forms": "^2.0.1",
+    "@angular/platform-browser": "^2.0.1",
+    "@angular/platform-browser-dynamic": "^2.0.1",
+    "@angular/router": "^3.0.1",
+    "@types/core-js": "^0.9.34",
+    "@types/jasmine": "^2.2.34",
+    "@types/node": "^6.0.41",
+    "@types/webpack": "^1.12.34",
+    "codelyzer": "^1.0.0-beta.0",
     "core-js": "^2.4.1",
-    "ng2-webpack-config": "0.0.4",
+    "ng2-webpack-config": "0.0.5",
     "rimraf": "^2.5.4",
-    "rxjs": "^5.0.0-beta.11",
-    "typescript": "^1.8.10",
+    "rxjs": "^5.0.0-beta.12",
+    "typescript": "^2.0.3",
     "webpack": "^1.13.2",
-    "webpack-dev-server": "^1.15.0",
+    "webpack-dev-server": "^1.16.1",
     "webpack-node-externals": "^1.4.3",
-    "zone.js": "^0.6.17"
+    "zone.js": "^0.6.25"
   },
   "peerDependencies": {
-    "@angular/common": "^2.0.0-rc.5",
-    "rxjs": "^5.0.0-beta.11"
+    "@angular/common": "^2.0.1",
+    "@angular/compiler": "^2.0.1",
+    "@angular/core": "^2.0.1"
   }
 }

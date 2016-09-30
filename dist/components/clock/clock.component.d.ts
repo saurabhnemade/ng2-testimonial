@@ -1,3 +1,4 @@
+/// <reference types="core-js" />
 import { EventEmitter } from '@angular/core';
 import { Observable } from 'rxjs/Rx';
 export declare class ClockComponent {

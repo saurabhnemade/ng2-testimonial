@@ -6,7 +6,6 @@ let template = require('./clock-demo.component.html');
 
 @Component({
     selector: 'clock-demo',
-    template: template,
-    directives: [CLOCK_DIRECTIVES] 
+    template: template
 })
 export class ClockDemoComponent { }

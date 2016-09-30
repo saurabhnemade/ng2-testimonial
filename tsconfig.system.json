@@ -9,7 +9,6 @@
         "outFile": "./dist/ng2-your-component-bundle.js"
     },
     "files": [
-        "src/index.ts",
-        "typings/index.d.ts"
+        "src/index.ts"
     ]
 }
