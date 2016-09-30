@@ -3,7 +3,7 @@ import {Component} from '@angular/core';
 let name = `AXA Angular 2 Component Starter`;
 
 // webpack html imports
-let template = require('./getting-started.component.html');
+let template = require('./getting-started-section.component.html');
 
 let desc = `
 `;
@@ -16,9 +16,9 @@ let readingDocumentation = require('./reading-documentation.md');
   template: template
 })
 export class GettingStartedSectionComponent {
-  public name:string = name;
-  public desc:string = desc;
-  public dependencies:string = dependencies;
-  public installation:string = installation;
-  public readingDocumentation:string = readingDocumentation;
+  public name: string = name;
+  public desc: string = desc;
+  public dependencies: string = dependencies;
+  public installation: string = installation;
+  public readingDocumentation: string = readingDocumentation;
 }

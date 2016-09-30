@@ -9,8 +9,7 @@ let template = require('./main-menu.component.html');
 
 @Component({
     selector: 'main-menu',
-    template,
-    pipes: [SearchFilterPipe]
+    template
 })
 
 export class MainMenuComponent {

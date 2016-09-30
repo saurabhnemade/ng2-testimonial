@@ -6,10 +6,19 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "sourceMap": true,
-    "noEmitHelpers": true
+    "noEmitHelpers": true,
+    "declaration": false,
+    "skipLibCheck": true,
+    "stripInternal": true,
+    "types": [
+      "core-js",
+      "jasmine",
+      "node",
+      "webpack"
+    ]    
   },
   "compileOnSave": true,
-  "buildOnSave": true,
+  "buildOnSave": true, 
   "exclude": [
     "node_modules",
     "dist"

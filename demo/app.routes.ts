@@ -1,4 +1,4 @@
-import { GettingStartedSectionComponent } from './components/getting-started/getting-started.component';
+import { GettingStartedSectionComponent } from './components/getting-started-section/getting-started-section.component';
 import { ClockSectionComponent } from './components/clock-section.component';
 import { TimerSectionComponent } from './components/timer-section.component';
 

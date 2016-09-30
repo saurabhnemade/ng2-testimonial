@@ -12,8 +12,7 @@ let template = require('./app.component.html');
 
 @Component({
     selector: 'demo-app',
-    template,
-    directives: [ MainMenuComponent, TopMenuComponent ]
+    template
 })
 export class AppComponent implements AfterContentInit {
     private viewContainerRef: ViewContainerRef;

@@ -1,5 +1,5 @@
 import { Component, Renderer, Inject, AfterViewInit } from '@angular/core';
-import { ROUTER_DIRECTIVES, Router, NavigationEnd } from '@angular/router';
+import { Router, NavigationEnd } from '@angular/router';
 import { DOCUMENT } from '@angular/platform-browser';
 
 // webpack html imports

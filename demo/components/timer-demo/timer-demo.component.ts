@@ -9,10 +9,10 @@ let template = require('./timer-demo.component.html');
     selector: 'timer-demo',
     providers: [TimerService]
 })
-
 export class TimerDemoComponent {
     public numberOfSeconds : number;
     public text : string;
+    
     constructor(public timerService:TimerService){}
 
     public start() : void {
