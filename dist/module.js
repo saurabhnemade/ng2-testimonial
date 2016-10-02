@@ -9,16 +9,19 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
+var common_1 = require('@angular/common');
 var clock_1 = require('./components/clock');
 var timer_1 = require('./components/timer');
-var NG2_COMPONENT_STARTER_DIRECTIVES = [clock_1.CLOCK_DIRECTIVES, timer_1.TIMER_DIRECTIVES];
+var NG2_COMPONENT_STARTER_DIRECTIVES = [clock_1.CLOCK_DIRECTIVES /*, TIMER_DIRECTIVES */];
 var ClockModule = (function () {
     function ClockModule() {
     }
     ClockModule = __decorate([
         core_1.NgModule({
             declarations: NG2_COMPONENT_STARTER_DIRECTIVES,
-            exports: NG2_COMPONENT_STARTER_DIRECTIVES
+            imports: [common_1.CommonModule],
+            exports: NG2_COMPONENT_STARTER_DIRECTIVES,
+            providers: [timer_1.TIMER_DIRECTIVES]
         }), 
         __metadata('design:paramtypes', [])
     ], ClockModule);

@@ -33,7 +33,8 @@ var TimerService = (function () {
         if (this.secondsLeft <= 0.0) {
             this.theTimer.unsubscribe();
             this.theTimer = undefined;
-            callback();
+            if (callback)
+                callback();
         }
     };
     TimerService = __decorate([

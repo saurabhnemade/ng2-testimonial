@@ -19,7 +19,7 @@ let html = require('!!raw?lang=markup!./clock-demo/clock-demo.component.html');
 
 export class ClockSectionComponent {
   public name: string = 'Clock';
-  public src: string = 'https://github.com/axa-ch/ng2-component-starter/tree/master/src/components/clock';
+  public src: string = 'https://github.com/saurabhnemade/ng2-testimonial/tree/master/src/components/ng2-testimonial';
   public html: string = html;
   public ts: string = ts;
   public titleDoc: string = titleDoc;

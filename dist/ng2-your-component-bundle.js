@@ -116,7 +116,8 @@ System.register("components/timer/timer.service", ['@angular/core', 'rxjs/Rx'], 
                     if (this.secondsLeft <= 0.0) {
                         this.theTimer.unsubscribe();
                         this.theTimer = undefined;
-                        callback();
+                        if (callback)
+                            callback();
                     }
                 };
                 TimerService = __decorate([
@@ -147,15 +148,18 @@ System.register("components/timer", ["components/timer/timer.service"], function
         }
     }
 });
-System.register("module", ['@angular/core', "components/clock", "components/timer"], function(exports_5, context_5) {
+System.register("module", ['@angular/core', '@angular/common', "components/clock", "components/timer"], function(exports_5, context_5) {
     "use strict";
     var __moduleName = context_5 && context_5.id;
-    var core_3, clock_1, timer_1;
+    var core_3, common_1, clock_1, timer_1;
     var NG2_COMPONENT_STARTER_DIRECTIVES, ClockModule;
     return {
         setters:[
             function (core_3_1) {
                 core_3 = core_3_1;
+            },
+            function (common_1_1) {
+                common_1 = common_1_1;
             },
             function (clock_1_1) {
                 clock_1 = clock_1_1;
@@ -164,14 +168,16 @@ System.register("module", ['@angular/core', "components/clock", "components/time
                 timer_1 = timer_1_1;
             }],
         execute: function() {
-            NG2_COMPONENT_STARTER_DIRECTIVES = [clock_1.CLOCK_DIRECTIVES, timer_1.TIMER_DIRECTIVES];
+            NG2_COMPONENT_STARTER_DIRECTIVES = [clock_1.CLOCK_DIRECTIVES /*, TIMER_DIRECTIVES */];
             ClockModule = (function () {
                 function ClockModule() {
                 }
                 ClockModule = __decorate([
                     core_3.NgModule({
                         declarations: NG2_COMPONENT_STARTER_DIRECTIVES,
-                        exports: NG2_COMPONENT_STARTER_DIRECTIVES
+                        imports: [common_1.CommonModule],
+                        exports: NG2_COMPONENT_STARTER_DIRECTIVES,
+                        providers: [timer_1.TIMER_DIRECTIVES]
                     }), 
                     __metadata('design:paramtypes', [])
                 ], ClockModule);
