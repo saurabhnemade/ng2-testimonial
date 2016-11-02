@@ -15,16 +15,17 @@
       "jasmine",
       "node",
       "webpack"
+
     ]    
   },
   "compileOnSave": true,
-  "buildOnSave": true, 
+  "buildOnSave": true,
   "exclude": [
     "node_modules",
     "dist"
   ],
   "awesomeTypescriptLoaderOptions": {
     "useWebpackText": true
-  }  
+  }
 }
 
